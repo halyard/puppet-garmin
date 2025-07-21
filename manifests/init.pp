@@ -18,6 +18,9 @@ class garmin (
 ) {
   file { $token_dir:
     ensure => directory,
+    owner  => 1000,
+    group  => 1000,
+    mode   => '0640',
   }
 
   -> docker::container { 'garmin':
