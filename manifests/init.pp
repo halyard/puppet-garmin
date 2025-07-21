@@ -30,6 +30,7 @@ class garmin (
       "-e INFLUXDB_USERNAME=${influxdb_username}",
       "-e INFLUXDB_PASSWORD=${influxdb_password}",
       "-e INFLUXDB_DATABASE=${influxdb_database}",
+      '-e INFLUXDB_ENDPOINT_IS_HTTP=False',
     ],
     cmd   => '',
   }
