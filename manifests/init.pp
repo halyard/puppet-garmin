@@ -16,7 +16,6 @@ class garmin (
   String $influxdb_port = '8086',
   String $container_ip = '172.17.0.3',
 ) {
-
   file { $token_dir:
     ensure => directory,
   }
@@ -30,7 +29,7 @@ class garmin (
       "-e INFLUXDB_PORT=${influxdb_port}",
       "-e INFLUXDB_USERNAME=${influxdb_username}",
       "-e INFLUXDB_PASSWORD=${influxdb_password}",
-      "-e INFLUXDB_DATABASE=${influxdb_databse}",
+      "-e INFLUXDB_DATABASE=${influxdb_database}",
     ],
     cmd   => '',
   }
