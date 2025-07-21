@@ -1,0 +1,16 @@
+{
+  "name": "halyard-garmin",
+  "version": "0.0.1",
+  "author": "Les Aker",
+  "license": "MIT",
+  "summary": "Configure garmin importer",
+  "source": "https://github.com/halyard/puppet-garmin",
+  "project_page": "https://github.com/halyard/puppet-garmin",
+  "issues_url": "https://github.com/halyard/puppet-garmin/issues",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+
+  ]
+}
