@@ -26,11 +26,11 @@ class garmin (
     args  => [
       "--ip ${container_ip}",
       "-v ${token_dir}:/home/appuser/.garminconnect",
-      "-e INFLUXDB_HOST=${}",
-      "-e INFLUXDB_PORT=${}",
-      "-e INFLUXDB_USERNAME=${}",
-      "-e INFLUXDB_PASSWORD=${}",
-      "-e INFLUXDB_DATABASE=${}",
+      "-e INFLUXDB_HOST=${influxdb_host}",
+      "-e INFLUXDB_PORT=${influxdb_port}",
+      "-e INFLUXDB_USERNAME=${influxdb_username}",
+      "-e INFLUXDB_PASSWORD=${influxdb_password}",
+      "-e INFLUXDB_DATABASE=${influxdb_databse}",
     ],
     cmd   => '',
   }
