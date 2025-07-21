@@ -13,7 +13,7 @@ class garmin (
   String $influxdb_username,
   String $influxdb_password,
   String $influxdb_database = 'garmin',
-  String $influxdb_port = '8086',
+  Integer $influxdb_port = 8086,
   String $container_ip = '172.17.0.3',
 ) {
   file { $token_dir:
